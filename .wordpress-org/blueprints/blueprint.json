@@ -1,0 +1,31 @@
+{
+    "landingPage": "/wp-admin/admin.php?page=wc-settings&tab=shipping&instance_id=3",
+    "preferredVersions": {
+        "php": "8.0",
+        "wp": "latest"
+    },
+    "phpExtensionBundles": [
+        "kitchen-sink"
+    ],
+    "features": {
+        "networking": true
+    },
+    "steps": [
+        {
+            "step": "importWordPressFiles",
+            "wordPressFilesZip": {
+                "resource": "url",
+                "url": "https://files.gravyzzap.com/wporg-wbs-preview.zip"
+            }
+        },
+        {
+            "step": "activatePlugin",
+            "pluginPath": "weight-based-shipping-for-woocommerce/plugin.php"
+        },
+        {
+            "step": "login",
+            "username": "demo",
+            "password": "demo"
+        }
+    ]
+}
